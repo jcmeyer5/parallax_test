@@ -1,8 +1,8 @@
 //
 //  HelloWorldScene.h
-//  parallax test
+//  color test
 //
-//  Created by James Meyer on 4/25/14.
+//  Created by James Meyer on 4/23/14.
 //  Copyright James Meyer 2014. All rights reserved.
 //
 // -----------------------------------------------------------------------

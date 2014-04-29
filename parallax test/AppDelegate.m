@@ -1,14 +1,13 @@
 //
 //  AppDelegate.m
-//  parallax test
+//  color test
 //
-//  Created by James Meyer on 4/25/14.
+//  Created by James Meyer on 4/23/14.
 //  Copyright James Meyer 2014. All rights reserved.
 //
 // -----------------------------------------------------------------------
 
 #import "AppDelegate.h"
-#import "IntroScene.h"
 #import "HelloWorldScene.h"
 
 @implementation AppDelegate
@@ -49,7 +48,7 @@
 -(CCScene *)startScene
 {
 	// This method should return the very first scene to be run when your app starts.
-	return [IntroScene scene];
+	return [HelloWorldScene scene];
 }
 
 @end
