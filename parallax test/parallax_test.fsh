@@ -28,11 +28,11 @@ void main( ) {
     // near layer
 	finalColor = sky_color;
     // mid layer
-	finalColor = mix( finalColor, parallax3_color, parallax3_color.a );
+	finalColor = vec4(parallax3_color.rgb + finalColor.rgb * (1.0 - parallax3_color.a), finalColor.a);
     // far layer
-	finalColor = mix( finalColor, parallax2_color, parallax2_color.a );
+	finalColor = vec4(parallax2_color.rgb + finalColor.rgb * (1.0 - parallax2_color.a), finalColor.a);
     // background
-	finalColor = mix( finalColor, parallax1_color, parallax1_color.a );
+	finalColor = vec4(parallax1_color.rgb + finalColor.rgb * (1.0 - parallax1_color.a), finalColor.a);
     
     // assign final color
     gl_FragColor = finalColor;

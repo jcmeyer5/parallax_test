@@ -49,14 +49,14 @@
 	background.texture.antialiased = NO;
 	[self addChild:background];
 		
-	samplerSize = [[CCSprite spriteWithImageNamed:@"mountains2048.png"] contentSize];
+	samplerSize = [[CCSprite spriteWithImageNamed:@"mountains2048a.png"] contentSize];
 	screenSize = [[CCDirector sharedDirector] viewSize];
 	
 	scaleRatio = GLKVector2Make(screenSize.width/samplerSize.width/2 , screenSize.height/samplerSize.height/2);
 	
 	background.shader = [CCShader shaderNamed:@"parallax_test"];
 
-	dynamicTexture = [CCTexture textureWithFile:@"mountains2048.png"];
+	dynamicTexture = [CCTexture textureWithFile:@"mountains2048a.png"];
 	dynamicTexture.antialiased = NO;
 	ccTexParams params = {GL_LINEAR,GL_LINEAR,GL_REPEAT,GL_CLAMP_TO_EDGE};
 	[dynamicTexture setTexParameters:&params];
