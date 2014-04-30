@@ -11,9 +11,9 @@
 #define MID_RATIO 0.20f
 #define FAR_RATIO 0.10f
 
-#define NEAR_DEFAULT_Y 400.0
-#define MID_DEFAULT_Y 300.0
-#define FAR_DEFAULT_Y 200.0
+#define NEAR_DEFAULT_Y 300.0
+#define MID_DEFAULT_Y 200.0
+#define FAR_DEFAULT_Y 100.0
 
 
 #import "HelloWorldScene.h"
@@ -80,13 +80,13 @@
 	background.shaderUniforms[@"u_layer3Coord"] = [NSValue valueWithGLKVector2:layer3Pos];
 	background.shaderUniforms[@"u_scaleRatio"] = [NSValue valueWithGLKVector2:scaleRatio];
 
-	background.shaderUniforms[@"u_farColor"] = [NSValue valueWithGLKVector3:GLKVector3Make(0.3294, 0.4824, 0.6941)];
-	background.shaderUniforms[@"u_midColor"] = [NSValue valueWithGLKVector3:GLKVector3Make(0.4300, 0.5600, 0.7300)];
-	background.shaderUniforms[@"u_nearColor"] = [NSValue valueWithGLKVector3:GLKVector3Make(0.5412, 0.6471, 0.7922)];
+//	background.shaderUniforms[@"u_farColor"] = [NSValue valueWithGLKVector3:GLKVector3Make(0.3294, 0.4824, 0.6941)];
+//	background.shaderUniforms[@"u_midColor"] = [NSValue valueWithGLKVector3:GLKVector3Make(0.4300, 0.5600, 0.7300)];
+//	background.shaderUniforms[@"u_nearColor"] = [NSValue valueWithGLKVector3:GLKVector3Make(0.5412, 0.6471, 0.7922)];
 
-//	background.shaderUniforms[@"u_midColor"] = [NSValue valueWithGLKVector3:GLKVector3Make(1.0, 0.0, 0.0)];
-//	background.shaderUniforms[@"u_nearColor"] = [NSValue valueWithGLKVector3:GLKVector3Make(0.0, 1.0, 0.0)];
-//	background.shaderUniforms[@"u_farColor"] = [NSValue valueWithGLKVector3:GLKVector3Make(0.0, 0.0, 1.0)];
+	background.shaderUniforms[@"u_midColor"] = [NSValue valueWithGLKVector3:GLKVector3Make(1.0, 0.0, 0.0)];
+	background.shaderUniforms[@"u_nearColor"] = [NSValue valueWithGLKVector3:GLKVector3Make(0.0, 1.0, 0.0)];
+	background.shaderUniforms[@"u_farColor"] = [NSValue valueWithGLKVector3:GLKVector3Make(0.0, 0.0, 1.0)];
 
 	CCLOG(@"scaleRatio: %f , %f",scaleRatio.x,scaleRatio.y);
 	CCLOG(@"samplerSize: %f , %f",samplerSize.width,samplerSize.height);
