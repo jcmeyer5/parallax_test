@@ -195,8 +195,10 @@
 		66D76AF2190B25710021D60C /* parallax_test.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 66D76AF0190B25710021D60C /* parallax_test.fsh */; };
 		66D76AF3190B25710021D60C /* parallax_test.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 66D76AF1190B25710021D60C /* parallax_test.vsh */; };
 		66D76AF8190B25870021D60C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D76AF5190B25870021D60C /* AppDelegate.m */; };
-		66D76AF9190B25870021D60C /* HelloWorldScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D76AF7190B25870021D60C /* HelloWorldScene.m */; };
 		66D76B0419109BBB0021D60C /* mountains2048a.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D76B0319109BBB0021D60C /* mountains2048a.png */; };
+		66D76B0719109C8C0021D60C /* ParallaxNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D76B0619109C8C0021D60C /* ParallaxNode.m */; };
+		66D76D801914089E0021D60C /* gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D76D7F1914089E0021D60C /* gradient.png */; };
+		66D8A948191139AC009A04E5 /* HillScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D8A947191139AC009A04E5 /* HillScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -243,7 +245,7 @@
 		66D768C0190B24FC0021D60C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
 		66D768C1190B24FC0021D60C /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; name = iTunesArtwork; path = ../iTunesArtwork; sourceTree = "<group>"; };
 		66D768C3190B24FC0021D60C /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; name = "iTunesArtwork@2x"; path = "../iTunesArtwork@2x"; sourceTree = "<group>"; };
-		66D768C8190B24FC0021D60C /* CCRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CCRenderer.h; path = Libraries/cocos2d/CCRenderer.h; sourceTree = "<group>"; };
+		66D768C8190B24FC0021D60C /* CCRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CCRenderer.h; path = Libraries/cocos2d/CCRenderer.h; sourceTree = "<group>"; usesTabs = 1; };
 		66D768C9190B24FC0021D60C /* CCRenderer_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CCRenderer_Private.h; path = Libraries/cocos2d/CCRenderer_Private.h; sourceTree = "<group>"; };
 		66D768CA190B24FC0021D60C /* CCRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CCRenderer.m; path = Libraries/cocos2d/CCRenderer.m; sourceTree = "<group>"; };
 		66D768CC190B24FC0021D60C /* CCShader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CCShader.h; path = Libraries/cocos2d/CCShader.h; sourceTree = "<group>"; };
@@ -586,9 +588,12 @@
 		66D76AF1190B25710021D60C /* parallax_test.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = parallax_test.vsh; sourceTree = "<group>"; };
 		66D76AF4190B25870021D60C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		66D76AF5190B25870021D60C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		66D76AF6190B25870021D60C /* HelloWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldScene.h; sourceTree = "<group>"; };
-		66D76AF7190B25870021D60C /* HelloWorldScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorldScene.m; sourceTree = "<group>"; usesTabs = 1; };
 		66D76B0319109BBB0021D60C /* mountains2048a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mountains2048a.png; sourceTree = "<group>"; };
+		66D76B0519109C8C0021D60C /* ParallaxNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParallaxNode.h; sourceTree = "<group>"; };
+		66D76B0619109C8C0021D60C /* ParallaxNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParallaxNode.m; sourceTree = "<group>"; usesTabs = 1; };
+		66D76D7F1914089E0021D60C /* gradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gradient.png; sourceTree = "<group>"; };
+		66D8A946191139AC009A04E5 /* HillScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HillScene.h; sourceTree = "<group>"; };
+		66D8A947191139AC009A04E5 /* HillScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HillScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -621,6 +626,7 @@
 				66D7687F190B24FC0021D60C /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		66D7687F190B24FC0021D60C /* Products */ = {
 			isa = PBXGroup;
@@ -663,6 +669,7 @@
 			isa = PBXGroup;
 			children = (
 				661E7E1C190FE8BF0054FAD1 /* mountains2048.png */,
+				66D76D7F1914089E0021D60C /* gradient.png */,
 				66D76B0319109BBB0021D60C /* mountains2048a.png */,
 				66D76AF1190B25710021D60C /* parallax_test.vsh */,
 				66D76AF0190B25710021D60C /* parallax_test.fsh */,
@@ -1376,8 +1383,10 @@
 			children = (
 				66D76AF4190B25870021D60C /* AppDelegate.h */,
 				66D76AF5190B25870021D60C /* AppDelegate.m */,
-				66D76AF6190B25870021D60C /* HelloWorldScene.h */,
-				66D76AF7190B25870021D60C /* HelloWorldScene.m */,
+				66D76B0519109C8C0021D60C /* ParallaxNode.h */,
+				66D76B0619109C8C0021D60C /* ParallaxNode.m */,
+				66D8A946191139AC009A04E5 /* HillScene.h */,
+				66D8A947191139AC009A04E5 /* HillScene.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1467,6 +1476,7 @@
 				66D768AB190B24FC0021D60C /* Icon-72.png in Resources */,
 				66D76AF2190B25710021D60C /* parallax_test.fsh in Resources */,
 				66D76A67190B24FE0021D60C /* LICENSE_CCBReader.txt in Resources */,
+				66D76D801914089E0021D60C /* gradient.png in Resources */,
 				66D769DB190B24FD0021D60C /* LICENSE_cocos2d.txt in Resources */,
 				66D768A2190B24FC0021D60C /* Default-568h@2x.png in Resources */,
 				66D768C2190B24FC0021D60C /* iTunesArtwork in Resources */,
@@ -1515,6 +1525,7 @@
 				66D76A5D190B24FE0021D60C /* CCBsequence.m in Sources */,
 				66D76966190B24FD0021D60C /* CCSprite.m in Sources */,
 				66D7693E190B24FC0021D60C /* CCParticleSystemBase.m in Sources */,
+				66D8A948191139AC009A04E5 /* HillScene.m in Sources */,
 				66D76913190B24FC0021D60C /* CCLabelBMFont.m in Sources */,
 				66D768E7190B24FC0021D60C /* CCActionManager.m in Sources */,
 				66D769A2190B24FD0021D60C /* UITouch+CC.m in Sources */,
@@ -1541,6 +1552,7 @@
 				66D7699F190B24FD0021D60C /* CCGLView.m in Sources */,
 				66D76AD9190B24FE0021D60C /* main.m in Sources */,
 				66D76958190B24FC0021D60C /* CCResponder.m in Sources */,
+				66D76B0719109C8C0021D60C /* ParallaxNode.m in Sources */,
 				66D769F7190B24FD0021D60C /* OALSimpleAudio.m in Sources */,
 				66D7693A190B24FC0021D60C /* CCParticleSystem.m in Sources */,
 				66D7692B190B24FC0021D60C /* CCNode+Debug.m in Sources */,
@@ -1562,7 +1574,6 @@
 				66D76919190B24FC0021D60C /* CCNodeColor.m in Sources */,
 				66D76928190B24FC0021D60C /* CCNode.m in Sources */,
 				66D768F8190B24FC0021D60C /* CCAtlasNode.m in Sources */,
-				66D76AF9190B25870021D60C /* HelloWorldScene.m in Sources */,
 				66D76A26190B24FD0021D60C /* IOSVersion.m in Sources */,
 				66D76904190B24FC0021D60C /* CCDirector.m in Sources */,
 				66D76A46190B24FD0021D60C /* CCScrollView.m in Sources */,
